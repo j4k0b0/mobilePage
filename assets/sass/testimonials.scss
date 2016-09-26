@@ -1,0 +1,54 @@
+#testimonials{
+	.testimonial{
+		display: none;
+		text-align: center;
+		padding: 0px 100px;
+		@media screen and (max-width: 740px){
+			padding: 0px;
+		}
+
+		&.active{
+			display: block;
+		}
+
+		p{
+			font-size: 24px;
+			font-style: italic;
+		}
+
+		span{
+			color:#222222;
+			font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-size: 18px;
+		}
+
+	}
+	#testimonial-control{
+		display: inline-block;
+		margin:auto;
+		margin-top: 50px;
+
+		li{
+			float: left;
+			margin: 0 5px;
+
+			a{
+				display: inline-block;
+				background-color: transparent;
+			    border: 2px solid #3498db;
+			    width: 12px;
+			    height: 12px;
+			    -moz-border-radius: 50%;
+			    -webkit-border-radius: 50%;
+			    border-radius: 50%;
+			    text-indent: -99999px;
+			}
+
+			&.active{
+				a{
+					background-color: #3498db;
+				}
+			}
+		}
+	}
+}
